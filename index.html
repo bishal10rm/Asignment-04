@@ -5,11 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Tracker</title>
     
-    <!-- tailwind+daisyui  -->
+      <!-- tailwind+daisyui  -->
       <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>     
 </head>
 <body>
-    
+    <body class="min-h-screen max-w-screen-lg bg-#f8fafc mx-auto ">
+    <section>
+        <header class=" text-[32px] color-black font-bold pt-32">
+           <h1>Job Application Tracker</h1>
+        </header>
+         <div class="flex justify-between items-center gap-3 pt-8 ">
+            <div class="card card-border bg-base-200 w-96">
+        <div class="card-body">
+         <h2 class="text-[14px]">Total</h2>
+          <h2 text-[20px]>8</h2>
+          <div class="card-actions justify-end">
+     
+          </div>
+        </div>
+       </div>
+
+       <div class="card card-border bg-base-200 w-96">
+        <div class="card-body">
+         <h2 class="text-[14px]">Interview</h2>
+          <h4 class="text-red-600">0</h4>
+          <div class="card-actions justify-end">
+     
+          </div>
+        </div>
+       </div>
+
+       <div class="card card-border bg-base-200 w-96">
+        <div class="card-body">
+         <h2 class="text-[14px]">Rejected</h2>
+          <h4 class="text-green-600">0</h4>
+          <div class="card-actions justify-end">
+     
+          </div>
+        </div>
+       </div>
+         </div>
+        <br>
+         <hr>
+        
+    </section>
 </body>
 </html>
