@@ -4,8 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Applied job</title>
+
+    <!-- tailwind+daisyui  -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
 </head>
 <body>
-    
+    <body class="min-h-screen max-w-screen-lg bg-#f8fafc mx-auto ">
+    <section>
+        <header class=" text-[32px] color-black font-bold pt-32">
+           <h1>Job Application Tracker</h1>
+        </header>
+         <div class="flex justify-between items-center gap-3 pt-8 ">
+            <div class="card card-border bg-base-200 w-96">
+        <div class="card-body">
+         <h2 class="text-[14px]">Total</h2>
+          <h2 text-[20px]>8</h2>
+          <div class="card-actions justify-end">
+     
+          </div>
+        </div>
+       </div>
+
+       <div class="card card-border bg-base-200 w-96">
+        <div class="card-body">
+         <h2 class="text-[14px]">Interview</h2>
+          <h4 class="text-red-600">0</h4>
+          <div class="card-actions justify-end">
+     
+          </div>
+        </div>
+       </div>
+
+       <div class="card card-border bg-base-200 w-96">
+        <div class="card-body">
+         <h2 class="text-[14px]">Rejected</h2>
+          <h4 class="text-green-600">0</h4>
+          <div class="card-actions justify-end">
+     
+          </div>
+        </div>
+       </div>
+         </div>
+        <br>
+         <hr>
+        
+    </section>
+
+
+    <section>
+        <div class="flex justify-between pt-5">
+            <h2 class="text-[24px] font-bold">Available Jobs</h2>
+            <p class="">8 jobs</p>
+        </div> 
+
+        <div class="pt-5">
+            <div class="tabs tabs-box"> 
+             <input type="radio" name="my_tabs_1" class="tab" aria-label="All" /> 
+               <input type="radio" name="my_tabs_1" class="tab" aria-label="Interview" checked="checked" /> 
+               <input type="radio" name="my_tabs_1" class="tab" aria-label="Rejected" /> 
+            </div> 
+         </div>
+    </section>
+    <br><br>
+
+    <section class="min-h-screen max-w-screen-lg pt-80  bg-base-200 ">
+        <div class="flex justify-center items-center mx-auto">
+            <img src="B13-A4-PH-Job-Tracker/jobs.png">
+             
+        </div>
+
+        <div>
+            <h2 class="text-[24px] text-center">No jobs available</h2>
+              <p class="text-[16px] text-center">Check back soon for new job opportunities</p>
+        </div>
+
+       
+        
+    </section>
 </body>
 </html>
