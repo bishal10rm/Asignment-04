@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Applied job</title>
-
+    
+    <!-- google font  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
     <!-- tailwind+daisyui  -->
       <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
@@ -29,7 +32,7 @@
        <div class="card card-border bg-base-200 w-96">
         <div class="card-body">
          <h2 class="text-[14px]">Interview</h2>
-          <h4 class="text-red-600">0</h4>
+          <h4 class="text-green-600">0</h4>
           <div class="card-actions justify-end">
      
           </div>
@@ -39,7 +42,7 @@
        <div class="card card-border bg-base-200 w-96">
         <div class="card-body">
          <h2 class="text-[14px]">Rejected</h2>
-          <h4 class="text-green-600">0</h4>
+          <h4 class="text-red-600">0</h4>
           <div class="card-actions justify-end">
      
           </div>
@@ -58,13 +61,13 @@
             <p class="">8 jobs</p>
         </div> 
 
-        <div class="pt-5">
-            <div class="tabs tabs-box"> 
-             <input type="radio" name="my_tabs_1" class="tab" aria-label="All" /> 
-               <input type="radio" name="my_tabs_1" class="tab" aria-label="Interview" checked="checked" /> 
-               <input type="radio" name="my_tabs_1" class="tab" aria-label="Rejected" /> 
-            </div> 
-         </div>
+        <main class="pt-5 mx-auto">
+          <div>
+           <button id="btn-all" class="bg-black text-white px-5 py-2">All</button>
+           <button id="btn-interview" class="bg-gray-300 px-5 py-2">Interview</button>
+           <button id="btn-rejected" class="bg-gray-300 px-5 py-2">Rejected</button>
+          </div>
+        </main>
     </section>
     <br><br>
 
@@ -82,5 +85,7 @@
        
         
     </section>
+
+    
 </body>
 </html>
